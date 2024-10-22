@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sada9at - Download APK</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .app-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .app-container:hover {
+            transform: scale(1.02);
+        }
+
+        .app-header {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background-color: #0077cc; /* Header background color */
+    color: white;
+    border-radius: 10px; /* Rounded corners for header */
+}
+
+.app-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 15px;
+    margin-right: 15px;
+    border: 2px solid white; /* Icon border */
+}
+
+.app-details {
+    flex-grow: 1; /* Allow this section to take the remaining space */
+}
+
+.app-title {
+    font-size: 24px; /* Slightly larger font size for title */
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+}
+
+.app-info {
+    font-size: 14px;
+    color: #f5f5f5;
+    margin: 5px 0; /* Add margin for spacing */
+}
+
+.app-rating {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 20px;
+}
+
+
+        .app-description {
+            padding: 20px;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .download-section {
+            text-align: center;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-top: 1px solid #ddd;
+        }
+
+        .download-button {
+            background-color: #0077cc;
+            color: white;
+            padding: 10px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .download-button:hover {
+            background-color: #005fa3;
+            transform: scale(1.05);
+        }
+
+        .screenshot-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .screenshot {
+            width: 120px;
+            height: auto;
+            margin: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .screenshot:hover {
+            transform: scale(1.05);
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+
+        .lightbox .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+            user-select: none;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        .nav-button.prev {
+            left: 20px;
+        }
+
+        .nav-button.next {
+            right: 20px;
+        }
+
+        @media (max-width: 480px) {
+            .app-container {
+                width: 100%;
+            }
+            .app-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="app-header">
+            <img src="src/logo.png" alt="App Icon" class="app-icon">
+            <div class="app-details">
+                <h1 class="app-title">Sada9at</h1>
+                <p class="app-info">Health | 21.2 MB</p>
+                <div class="app-rating">
+                    <span class="stars" style="font-size: 30px; color: rgb(255, 225, 0);">★★★★☆</span>
+                    <span>4.5 • 10,000+ downloads</span>
+                </div>
+            </div>
+        </div>        
+
+        <div class="app-description">
+            <p style="direction: rtl;">يربط تطبيق Sada9at المحتاجين بالمساجد والمرضى والمتبرعين بالدم. اكتشف ميزات مذهلة لمساعدة مجتمعك.</p>
+        </div>
+
+        <div class="screenshot-gallery">
+            <img src="src/1.jpg" alt="Screenshot 1" class="screenshot" onclick="openLightbox(0)">
+            <img src="src/2.jpg" alt="Screenshot 2" class="screenshot" onclick="openLightbox(1)">
+            <img src="src/3.jpg" alt="Screenshot 3" class="screenshot" onclick="openLightbox(2)">
+            <img src="src/4.jpg" alt="Screenshot 4" class="screenshot" onclick="openLightbox(3)">
+            <img src="src/5.jpg" alt="Screenshot 5" class="screenshot" onclick="openLightbox(4)">
+        </div>
+
+        <div class="download-section">
+            <a href="https://drive.google.com/file/d/1NPcD4IdRsf1lSvLMoYe13iFLHY3-M3Iz/view?usp=sharing" download class="download-button">Download APK</a>
+            <p class="download-info">Compatible with Android 5.0 and up</p>
+            <p class="download-info" style="direction: rtl;">متوافق مع Android 5.0 والإصدارات الأحدث</p>
+        </div>
+
+        <div class="app-footer" style="text-align: center; padding: 10px; font-size: 12px; color: #888;">
+            <p>Last updated on October 2024</p>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-image" src="" alt="Lightbox Image">
+        <span class="nav-button prev" onclick="changeImage(-1)">&lt;</span>
+        <span class="nav-button next" onclick="changeImage(1)">&gt;</span>
+    </div>
+
+    <script>
+        const images = [
+            'src/1.jpg',
+            'src/2.jpg',
+            'src/3.jpg',
+            'src/4.jpg',
+            'src/5.jpg'
+        ];
+
+        let currentIndex = 0;
+
+        function openLightbox(index) {
+            currentIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightbox-image');
+            lightboxImage.src = images[currentIndex];
+            lightbox.style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+        }
+
+        function changeImage(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = images.length - 1;
+            if (currentIndex >= images.length) currentIndex = 0;
+            const lightboxImage = document.getElementById('lightbox-image');
+            lightboxImage.src = images[currentIndex];
+        }
+    </script>
+
+</body>
+</html>
